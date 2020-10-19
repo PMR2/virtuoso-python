@@ -36,11 +36,12 @@ setup(name='virtuoso',
       include_package_data=True,
       zip_safe=False,
       tests_require=["nose"],
-      requires=[
+      install_requires=[
           'SQLAlchemy',
           'pyodbc',
           'rdflib',
-          'uricore'
+          'uricore',
+          'werkzeug',
       ],
       dependency_links=[
           'https://pypi.python.org/packages/source/S/SQLAlchemy/SQLAlchemy-0.9.8.tar.gz#egg=SQLAlchemy',
